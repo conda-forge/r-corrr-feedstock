@@ -1,4 +1,4 @@
-{% set version = '0.3.0' %}
+{% set version = "0.3.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -11,12 +11,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/corrr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/corrr/corrr_{{ version }}.tar.gz
-  sha256: 47007dbeb5411bd6eebad06459eaee4f33f800eb7337fba6edfb9749ea29a1d0
+  sha256: d07244c1c02e7c36211b5d5a57993a786063b1b10ef9c6ca03151a81760d1704
 
 build:
   noarch: generic
   merge_build_host: True  # [win]
-  number: 1000
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
