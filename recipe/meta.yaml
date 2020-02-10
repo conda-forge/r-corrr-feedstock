@@ -1,4 +1,4 @@
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/corrr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/corrr/corrr_{{ version }}.tar.gz
-  sha256: 070de316f03104f9b97aca245a719217e248818d274fdd208a9e3d6ef59b587e
+  sha256: d6229515b6d34dd021e85db2be4759befe0d1100258dc8990eb081da1c9ecaef
 
 build:
   merge_build_host: True  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -56,6 +56,7 @@ test:
 about:
   home: https://github.com/drsimonj/corrr
   license: MIT
+  license_file: LICENSE
   summary: A tool for exploring correlations. It makes it possible to easily perform routine
     tasks when exploring correlation matrices such as ignoring the diagonal, focusing
     on the correlations of certain variables against others, or rearranging and visualising
