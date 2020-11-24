@@ -5,11 +5,9 @@ Home: https://github.com/drsimonj/corrr
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-corrr-feedstock/blob/master/LICENSE.txt)
 
 Summary: A tool for exploring correlations. It makes it possible to easily perform routine tasks when exploring correlation matrices such as ignoring the diagonal, focusing on the correlations of certain variables against others, or rearranging and visualising the matrix in terms of the strength of the correlations.
-
-
 
 Current build status
 ====================
